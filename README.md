@@ -36,3 +36,14 @@ The repo containing the codes of the series
     --> {} injecting data via this can let XSS(Cross Site Scripting)
     --> But react takes care of this by escaping the character 
     --> ALso react treats the content injected in the DOM via jsx as pure string only
+
+## Fourth Episode -> Talk is cheap, show me the code 4️⃣
+    --> Tried to build swiggy, zomato like food ordering app
+    --> First did the planning of the website
+    --> List down the components that will be required
+    --> Build the compoents one by one
+    --> Passed arguments from one component to another 
+    --> Received and process the prop in the another function
+    --> Utilized the real time data of the swiggy
+    --> Tried to optimized the code
+    --> Basic Js conceps too like why key are important in .map method
