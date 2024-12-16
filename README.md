@@ -48,7 +48,7 @@ The repo containing the codes of the series
     --> Tried to optimized the code
     --> Basic Js conceps too like why key are important in .map method
 
-## Fifth Episode -> Let's get Hooked
+## Fifth Episode -> Let's get Hooked 5️⃣
     --> Arranging the code in structure like src, components, utils
     --> Not keeping hardcoded value in components
     --> For hardcoded use utils
@@ -56,8 +56,5 @@ The repo containing the codes of the series
     --> How the data and UI is changed with hooks
     --> Reconcilation Algo: The way react update the DOM in minimal steps based on the changes made
     --> Diffing Algo: The algo which compares the two vitual DOM trees and find out the difference
-    --> Virtual DOM: The object which is return by the method 
-                    javascript```
-                        React.createElement
-                    ```
+    --> Virtual DOM: The object which is return by the method React.createElement
     
