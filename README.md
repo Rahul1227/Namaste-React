@@ -58,3 +58,11 @@ The repo containing the codes of the series
     --> Diffing Algo: The algo which compares the two vitual DOM trees and find out the difference
     --> Virtual DOM: The object which is return by the method React.createElement
     
+## Sixth Episode --> Exploring the World 6️⃣
+    --> Fetching the data from the api
+    --> created own json server using the command 
+            npx json-server --watch <filename> --port <port number>
+    --> Created the search functionality
+    --> Showed cafe according to the search result
+    --> added enter key press functionality to the search
+    --> Created the shimmer ui for the page to make better user experience
