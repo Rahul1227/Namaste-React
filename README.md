@@ -66,3 +66,11 @@ The repo containing the codes of the series
     --> Showed cafe according to the search result
     --> added enter key press functionality to the search
     --> Created the shimmer ui for the page to make better user experience
+
+
+## Seventh Episode --> Finding the Path 7️⃣
+    --> Set up the routing in the project
+    --> Create a default error page
+    --> fetched the data from the swiggy api
+    --> Learnt Dynamic Routing 
+    --> Showed the menu of the restuartants via the swiggy via
