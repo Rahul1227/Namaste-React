@@ -73,4 +73,37 @@ The repo containing the codes of the series
     --> Create a default error page
     --> fetched the data from the swiggy api
     --> Learnt Dynamic Routing 
-    --> Showed the menu of the restuartants via the swiggy via
+    --> Showed the menu of the restuartants via the swiggy api
+
+## Eight Episode --> Let's get classy 8️⃣
+    --> Learnt about the class componnent
+    --> Difference between the functional and clas components
+    --> React Life cycle
+        Parent constructor()
+        Parent render()
+
+            first Child constructor()
+            first Child render()
+
+            Second Child constructor()
+            Second Child render()
+
+            first Child componentDidMount()
+            Second Child componentDidMount()
+        Parent componentDidMount()
+
+    --> What happens in each one 
+        ------Mounting------
+            constructor(dummy)
+            render(dummy)
+            componentDidMount(Api Call)
+
+        ------Update---------
+            render(API data)
+            componentDidUpdate(make comparisions)
+
+        -----Unmounting-------
+            componentWillUnmount()
+
+
+
