@@ -92,7 +92,7 @@ The repo containing the codes of the series
             Second Child componentDidMount()
         Parent componentDidMount()
 
-    ![image](https://github.com/Rahul1227/Namaste-React/blob/main/8%20episode/picture/React%20Life%20Cycle.png)
+    ### ![image](https://github.com/Rahul1227/Namaste-React/blob/main/8%20episode/picture/React%20Life%20Cycle.png)
 
     --> What happens in each one 
         ------Mounting------
