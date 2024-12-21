@@ -1,0 +1,34 @@
+.developer-page{
+    margin: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev-img img{
+    width: 300px;
+    border-radius: 50%;
+    border: 2px black solid;
+    margin-bottom: 20px;
+}
+
+.dev-content{
+    font-size: 20;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-start;
+
+}
+
+li a{
+    text-decoration: none;
+}
+
+.dev-project{
+    margin-top: 30px;
+    font-size: 20;
+}

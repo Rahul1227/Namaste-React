@@ -124,4 +124,16 @@ The repo containing the codes of the series
     --> These techniques are used to handle the large scaled project by chunking the code into small bundles
 
 
+## Tenth Episode- Joh dikhta hai, vo bikta hai
+    --> Learnt about various css writing methods
+    --> Learnt about some of the popular ones like
+        - SASS
+        - SCSS
+        - Material UI
+        - Chakra UI
+    --> In depth knowledge of Tailwind css
+    --> How to configure tailwind css
+    --> How to use it
+
+
 
