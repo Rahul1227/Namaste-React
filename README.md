@@ -108,4 +108,20 @@ The repo containing the codes of the series
             componentWillUnmount()
 
 
+## Ninth Episode --> Optimizing out App 9️⃣
+    --> Breaking the app into the modular code
+    --> Creating custom hooks
+    --> It is good to use 'use-<name>' for the custom hook
+    --> created custom hook to check the online status
+    --> created component to handle the offline status (providing the tictactoe game)
+    --> Learnt about a concept which is known by many names like:
+            - On-demand Loading
+            - Lazy Loading
+            - Dynamic Loading
+            - Dynamic Bundling
+            - Code Splitting
+            - Chunking
+    --> These techniques are used to handle the large scaled project by chunking the code into small bundles
+
+
 
