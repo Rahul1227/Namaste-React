@@ -1,0 +1,136 @@
+/* Shimmer animation effect */
+@keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+  
+  /* Wrapper for shimmer */
+  .shimmer-wrapper {
+    margin-top: 200px;
+    padding: 20px;
+  }
+  
+  /* Header shimmer container */
+  .shimmer-header {
+    display: flex;
+    flex-direction: col;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    
+  }
+
+  .shimmer-search{
+    width: 800px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(
+      to right,
+      #d4d4d4 0%,
+      #a6a6a6 50%,
+      #d4d4d4 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    transform: translateY(-100px);
+
+  }
+  
+  /* Search button placeholder */
+  .shimmer-page-top {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(
+      to right,
+      #d4d4d4 0%,
+      #a6a6a6 50%,
+      #d4d4d4 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  /* Top-rated button placeholder */
+  .shimmer-top-rated {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(
+      to right,
+      #d4d4d4 0%,
+      #a6a6a6 50%,
+      #d4d4d4 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  /* Shimmer container for cards */
+  .shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Individual shimmer card */
+  .shimmer {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Shimmer image placeholder */
+  .shimmer-img {
+    width: 340px;
+    height: 290px;
+    margin: 5px;
+    padding: 19px;
+    border-radius: 20px;
+    background: linear-gradient(
+      to right,
+      #d4d4d4 0%,
+      #a6a6a6 50%,
+      #d4d4d4 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  /* Inside shimmer lines */
+  .shimmer > .inside-shimmer1,
+  .shimmer > .inside-shimmer2,
+  .shimmer > .inside-shimmer3,
+  .shimmer > .inside-shimmer4 {
+    margin: 5px auto;
+    background: linear-gradient(
+      to right,
+      #d4d4d4 0%,
+      #a6a6a6 50%,
+      #d4d4d4 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  .inside-shimmer1 {
+    margin-top: 20px;
+    height: 30px;
+    width: 340px;
+  }
+  
+  .inside-shimmer2,
+  .inside-shimmer3,
+  .inside-shimmer4 {
+    margin-top: 15px;
+    height: 20px;
+    width: 330px;
+  }
+  
