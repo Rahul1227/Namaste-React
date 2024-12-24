@@ -1,11 +1,12 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense,useState } from "react";
 import ReactDOM from "react-dom/client"; // Correctly import ReactDOM with 'client'
 import Header from "./components/Header";
 import Body from "./components/Body";
 import {createBrowserRouter, RouterProvider,Outlet} from 'react-router-dom';
 import Error from "./components/Error";
 import Contact from "./components/Contact";
-import ResMenu from "./components/ResMenu";
+import ResMenu from "./components/menu/ResMenu";
+import UserContext from "./context/UserContext";
 
 // import About from './components/About'
 
@@ -34,14 +35,16 @@ const About=lazy(()=>import('./components/About'));
 
     */
 
-const AppLayout = () => (
-  <>
-    <Header />
-    <Outlet/>
+    const AppLayout = () => {
+      const [userName, setUserName] = useState("Rahul Ya"); // Moved inside the component
     
-  </>
-);
-
+      return (
+        <UserContext.Provider value={{ userName, setUserName }}>
+          <Header />
+          <Outlet />
+        </UserContext.Provider>
+      );
+    };    
 const appRouter=createBrowserRouter([
   {
     path:'/',

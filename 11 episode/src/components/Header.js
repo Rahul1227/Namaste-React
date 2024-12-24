@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import UserContext from "../context/UserContext";
 
 const Header = () => {
   const [btnText,setBtnText]=useState('Login')
+
+  const data=useContext(UserContext);
   return (
     <div className="header">
       <div className="logo">
@@ -46,6 +50,7 @@ const Header = () => {
               btnText=='Login'? setBtnText('Logout'):setBtnText('Login')
             }}
           >{btnText}</button></li>
+          <li className="text-xl font-thin">LoggedIn User:{data.userName}</li>
         </ul>
       </div>
     </div>

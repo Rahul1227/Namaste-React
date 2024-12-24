@@ -11,7 +11,7 @@ const Developer = () => {
     try {
       const res = await fetch(GITHUB_API);
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setGithubData(data);
     } catch (err) {
       console.log(err);

@@ -1,10 +1,12 @@
-import Rescard from "./ResCard";
+import Rescard,{withPromotedLabel} from "./ResCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOffline from "../customhooks/useOffline";
 import useFetchResList from "../customhooks/useFetchResList";
 import TicTacToe from "../game/TicTacToe";
+import UserContext from "../context/UserContext";
+import { useContext } from "react";
 
 
 const Body = () => {
@@ -12,6 +14,8 @@ const Body = () => {
   const [originalList, setOriginalList] = useState([]);
   const [heading, setHeading] = useState("Nearby Restaurants");
   const [searchText, setSearchText] = useState("");
+
+  const data=useContext(UserContext);
 
   const fetchedList = useFetchResList();
 
@@ -23,6 +27,8 @@ const Body = () => {
     }
   }, [fetchedList]);
 
+  // console.log('printing the reslist',originalList)
+  const PromotedLabel=withPromotedLabel(Rescard);
   const handleClick = () => {
     const searchlist = originalList.filter((res) => {
       return res.card.card.info.name
@@ -71,6 +77,14 @@ const Body = () => {
           Search
         </button>
       </div>
+       {/* creating the input field */}
+      <input
+         type="text"
+         className="border-2 border-black"
+         value={data.userName}
+         onChange={(e)=>data.setUserName(e.target.value)}
+      />
+
 
       <div className="btn">
         <button
@@ -95,7 +109,17 @@ const Body = () => {
         {list.map((restInfo) => {
           return (
             <Link to={"/res/" + restInfo.card?.card?.info?.id}>
-              <Rescard key={restInfo.card?.card?.info?.id} resData={restInfo} />
+              {
+          
+              
+               restInfo.card?.card?.info?.promoted?
+               <PromotedLabel key={restInfo.card?.card?.info?.id} resData={restInfo}/>
+                :
+                <Rescard key={restInfo.card?.card?.info?.id} resData={restInfo}/>
+
+              }
+                
+              
             </Link>
           );
         })}

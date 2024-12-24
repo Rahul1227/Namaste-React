@@ -136,4 +136,18 @@ The repo containing the codes of the series
     --> How to use it
 
 
+## Eleventh Episode - Data is the new Oil  1️⃣1️⃣
+    --> Higher Order Component
+    --> Added the promoted tag in the resCard
+    --> Built accodian
+    --> Controlled and Uncontrolled
+    --> Lifting the state up
+    --> Props drilling
+    --> Context API
+    --> Creating context
+    --> Getting the data from the context
+    --> Updating the data from the context
+
+
+
 
