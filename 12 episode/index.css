@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --font-name: "Delius Swash Caps", cursive;
+  }*
+
+{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background: linear-gradient(to right,#f7d794, #cf6a87);
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 2px;
+    border: 1px solid black;
+    border-radius: 0 30 0 30;
+    background: linear-gradient(45deg, #f3a683,#78e08f);
+    position: fixed;
+    top:0px;
+    left:2px;
+    right: 2px;
+    bottom: auto;
+    z-index: 200;
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 5px 2px gray
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+img{
+    width: 100px;
+    mix-blend-mode: darken;
+}
+
+.company-name{
+    font-size: 30px;
+    font-family: "Amita", serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.company-name a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-items>ul{
+    display:flex;
+    gap:30px;
+    padding-right: 20px ;
+
+
+}
+
+.nav-items > ul > li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+.search{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    height: 50px;
+    
+
+}
+
+.search-text{
+    flex-grow:initial;
+    padding: 6px;
+    width: 40%;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 0 0 0 20px;
+    box-shadow: 3px 3px 5px 2px gray;
+    
+
+}
+
+.search-button,.top-rated-btn,.login-btn,.clear-cart-bttn, .project-bttn{
+    background-color:#63cdda;
+    padding: 2px 17px;
+    font-size: 20px;
+    font-weight: 350;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-left: 0px;
+    border-radius:0 20px 0 0;
+    box-shadow: 3px 3px 5px 2px gray
+}
+.btn {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin: 10px 0; /* Optional margin */
+}
+
+.top-rated-btn,.login-btn{
+    border-radius:0 10px 0 10;
+    
+
+}
+
+.search-button:hover, .top-rated-btn:hover,.clear-cart-bttn:hover,.project-bttn:hover{
+    transition-duration: 0.2s;
+    transform: translateY(-3px);
+    background-color:#6dcd82;
+    color:white;
+}
+
+.res-container{
+    display: flex;
+    flex-direction: col;
+    flex-wrap: wrap;
+    margin:5px;
+    gap:15px;
+    padding-left: 7px;
+    row-gap: 20px;
+    margin-left: 25px;
+}
+
+.res-container a,.nav-items > ul > li a{
+    color: inherit; /* Use the inherited color from the parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.res-container a:hover, .nav-items > ul > li a:hover{
+    color:rgb(138, 67, 146)
+}
+
+.res-card{
+   
+    width: 350px;
+    height: 450px;
+    border-radius: 20;
+    background-color: #f0f0f0;
+    cursor: pointer;
+
+}
+
+.res-card:hover{
+    box-shadow: 2px 3px 5px 3px gray;
+    transform: translateY(-3px);
+    transition: ease-in-out;
+}
+
+h2{
+    color:red;
+    margin: 8px 15px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.res-card>.res-img>img{
+    object-fit: fill;
+    width: 340px;
+    height: 290px;
+    margin: 5px;
+    padding:9px;
+    border-radius: 20;
+}
+
+.res-card-content{
+    margin: 5px 10px;
+    line-height: 25px;
+    padding-left: 7px;
+}
+
+.about-page,.error-page,.contact-page,.menu-page{
+    margin-top: 150px;
+}
+
+.user{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.offline-page{
+    margin-top: 200px;
+}

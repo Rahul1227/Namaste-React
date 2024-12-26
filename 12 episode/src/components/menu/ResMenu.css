@@ -1,0 +1,123 @@
+/* Scoped to ResMenu */
+.resmenu-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 150px;
+  }
+  
+  .resmenu-title {
+    font-size: 2rem;
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .resmenu-subtitle {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .resmenu-cuisines {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .resmenu-section-title {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  /* Menu Item List Styles */
+  .resmenu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resmenu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .resmenu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resmenu-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .resmenu-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .resmenu-item-details h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0 0 5px 0;
+  }
+  
+  .resmenu-item-details p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .resmenu-item-price {
+    font-size: 1rem;
+    color: #1a73e8;
+    font-weight: bold;
+    align-self: flex-end;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resmenu-container {
+      padding: 15px;
+    }
+  
+    .resmenu-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .resmenu-item img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .resmenu-item-details h4 {
+      font-size: 1rem;
+    }
+  
+    .resmenu-item-price {
+      font-size: 0.9rem;
+      align-self: flex-start;
+    }
+  }
+  
