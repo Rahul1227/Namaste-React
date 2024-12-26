@@ -148,6 +148,16 @@ The repo containing the codes of the series
     --> Getting the data from the context
     --> Updating the data from the context
 
+## Twelveth Episode -- Let's build our Store 
+    --> Install the redux and redux tool kit
+    --> Understood the workflow of the react-redux
+    --> Implemented the cart feature of the app using redux
+    --> Made our store, connect it with the app and created slice for the cart
+    --> Connect the add button of the menu with the cart 
+    --> Showed the number of items in the cart
+    --> Also provided the clearcart and removeItem in the cart page
+    --> Provided the summary of the cart to the user
+
 
 
 
